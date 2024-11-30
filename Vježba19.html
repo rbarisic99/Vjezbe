@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Vjezba_19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position:relative;
+            background-position: fixed;
+            background-repeat: no-repeat;
+            height: 250px;
+            background-size: cover;
+            background-image: url("https://raw.githubusercontent.com/rbarisic99/Vjezbe/main/51792-HEADER-1-M.webp");
+        }
+
+        header h1 {
+            text-align: center;
+            padding: 50% 0 0 0;
+            color: #fff;
+            margin: 0;
+            line-height: 20.0;
+        }
+
+        .header-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+        }        
+
+        main {
+            padding: 20px 10px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #000; 
+        }
+
+        p {
+            line-height: 24px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px 0;
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .watch-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .watch {
+            width: calc(30% - 20px); 
+            margin-bottom: 20px;
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            box-sizing: border-box; 
+        }    
+
+        .watch img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .watch-text {
+            text-align: left; 
+            margin-top: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #000; 
+        }
+
+        .price-label {
+            color: #5cb85c;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex; 
+            justify-content: space-around; 
+        }
+
+        nav li {
+            text-align: center;
+            margin: 0; 
+        }
+
+        nav a {
+            color: white;
+            background: black;
+            font-weight: bold;
+            display: block;
+            padding: 15px;
+            font-size: 15px;
+            text-decoration: none;
+            margin-bottom: 0; 
+        }
+
+        nav a:hover {
+            background: darkgray;
+        }
+
+        @media only screen and (min-width: 700px) {
+            header {
+                background-image: url("https://raw.githubusercontent.com/rbarisic99/Vjezbe/main/51792-HEADER-1-T.webp");
+                height: 330px;
+            }
+        }
+
+        @media only screen and (min-width: 990px) {
+            header {
+                background-image: url("https://raw.githubusercontent.com/rbarisic99/Vjezbe/main/51792-HEADER-1-D.webp");
+                height: 100vh;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+
+        @media (min-width: 480px) {
+            nav ul {
+                display: flex; 
+            }
+
+            nav li {
+                flex: 1 1 auto;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>MARQ ® TOOL WATCH COLLECTION</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.garmin.com/hr-HR/p/783467/pn/010-02648-31" target="_blank">Homepage</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>LUXURY SMARTWATCHES</h2>
+        <div class="watch-container">
+            <div class="watch">
+                <img src="https://raw.githubusercontent.com/rbarisic99/Vjezbe/main/adventurer.webp" alt="Watch 1">
+                <div class="watch-text">
+                    <h3>MARQ® Adventurer</h3>
+                    <p>Potrebna vam je pouzdana pomoć za avanture.
+                    Za vaše vam je ekspedicije potreban luksuzan i moderan 
+                    funkcionalni sat napravljen od titanija 5. klase
+                    s AMOLED zaslonom, TOPO kartama i još mnogo toga.
+                    <br>  
+                    <br> 
+                    <br>   
+                    <span class="price-label">Cijena: </span><span class="price">2.250,00 €</span></p>
+                </div>
+            </div>
+            <div class="watch">
+                <img src="https://raw.githubusercontent.com/rbarisic99/Vjezbe/main/athlete.webp" alt="Watch 2">
+                <div class="watch-text">
+                    <h3>MARQ® Athlete</h3>
+                    <p>Uvijek pomičete svoje granice. Zaslužujete luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom i revolucionarnim funkcijama za treniranje i oporavak.
+                    <br> 
+                    <br> 
+                    <br>    
+                    <span class="price-label">Cijena: </span><span class="price">1.950,00 €</span></p>
+                </div>
+            </div>
+            <div class="watch">
+                <img src="https://raw.githubusercontent.com/rbarisic99/Vjezbe/main/aviator.webp" alt="Watch 3">
+                <div class="watch-text">
+                    <h3>MARQ® Aviator</h3>
+                    <p>Želite biti spremni poletjeti u trenutku. Potreban vam je luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom i namjenskim funkcijama za letenje.
+                    <br> 
+                    <br> 
+                    <br>    
+                    <span class="price-label">Cijena: </span><span class="price">2.550,00 €</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>&copy; R Barisic</footer>
+</body>
+</html>
